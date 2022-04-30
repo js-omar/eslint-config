@@ -5,11 +5,11 @@
   "description": "my eslint config",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "check:cspell": "cspell",
     "check:format": "prettier --check .",
     "check:lint": "eslint . --ext ts --ext js",
-    "test:all": "npm run check:cspell && npm run check:format && npm run check:lint",
-    "prepare": "husky install"
+    "test:all": "npm run check:cspell && npm run check:format && npm run check:lint"
   },
   "homepage": "https://github.com/js-omar/eslint-config#readme",
   "repository": {
@@ -38,14 +38,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.10",
-    "cspell": "^5.19.7",
-    "husky": "^7.0.0",
-    "typescript": "^4.6.3",
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.1.4"
+    "prettier-plugin-tailwindcss": "^0.1.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.21.0",
@@ -58,11 +51,6 @@
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.10",
-    "husky": "^7.0.0",
-    "typescript": "^4.6.3",
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.1.4"
+    "husky": "^7.0.0"
   }
 }
