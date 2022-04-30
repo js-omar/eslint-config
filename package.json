@@ -1,7 +1,7 @@
 {
   "name": "@js-omar/eslint-config",
   "displayName": "Shared Eslint Config",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "my eslint config",
   "main": "index.js",
   "scripts": {
