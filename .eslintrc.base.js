@@ -4,8 +4,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [],
-  plugins: [],
+  extends: ['eslint:recommended', 'airbnb-base'],
+  parserOptions: {
+    createDefaultProgram: true,
+    ecmaVersion: 13,
+    sourceType: 'module',
+  },
   rules: {
     'no-undef': 'off',
     'comma-dangle': 'off',
@@ -14,11 +18,5 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
-    '@typescript-eslint/member-ordering': ['error'],
-    '@typescript-eslint/explicit-member-accessibility': ['error'],
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      { allowExpressions: true },
-    ],
   },
 };

@@ -4,19 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'airbnb-base',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    './.eslintrc.base.js',
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 13,
-    sourceType: 'module',
-  },
-  plugins: ['@typescript-eslint'],
+  extends: ['./.eslintrc.base.js', 'plugin:prettier/recommended'],
   rules: {},
   ignorePatterns: [
     './lib/**/*',
@@ -25,5 +13,11 @@ module.exports = {
     './dist/**/*',
     './node_modules/**/*',
     './src/**/__snapshots__/**/*',
+  ],
+  overrides: [
+    {
+      files: ['*.ts'],
+      extends: ['./.eslintrc.typescript.js'],
+    },
   ],
 };
