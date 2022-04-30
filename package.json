@@ -5,8 +5,10 @@
   "description": "my eslint config",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint .",
-    "eslint:fix": "eslint --fix ."
+    "check:cspell": "cspell",
+    "check:format": "prettier --check .",
+    "check:lint": "eslint . --ext ts --ext js",
+    "test:all": "npm run check:cspell && npm run check:format && npm run check:lint"
   },
   "homepage": "https://github.com/js-omar/eslint-config#readme",
   "repository": {
