@@ -55,14 +55,6 @@
     "node": "*",
     "npm": "*"
   },
-  "files": [
-    "dist",
-    "AUTHORS",
-    ".mailmap",
-    "CHANGELOG.md",
-    "LICENSE",
-    "README.md"
-  ],
   "publishConfig": {
     "access": "public"
   },
