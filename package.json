@@ -2,7 +2,7 @@
   "name": "@js-omar/eslint-config",
   "displayName": "Eslint Config",
   "description": "Eslint Config Project",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/js-omar/eslint-config#readme",
   "keywords": [
     "javascript"
