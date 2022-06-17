@@ -1,6 +1,6 @@
-# Omar Eslint Config
+# Eslint Config
 
-my Shared Eslint Config
+Eslint Config Project
 
 ## Installation
 
@@ -33,12 +33,6 @@ Install Packages
 
 ```bash
   npm install
-```
-
-Start the server
-
-```bash
-  npm run start
 ```
 
 ## Contributing

@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Code Quality
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Get checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Install Node js
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.10.0'
+
+      # Install Dependencies
+      - name: Install dependencies 🔧
+        run: npm ci
+
+      # Npm Run Test
+      - name: Run Test All
+        run: npm run test:all:ci

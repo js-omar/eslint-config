@@ -1,56 +1,80 @@
 {
   "name": "@js-omar/eslint-config",
-  "displayName": "Shared Eslint Config",
-  "version": "1.4.0",
-  "description": "my eslint config",
-  "main": "index.js",
+  "displayName": "Eslint Config",
+  "description": "Eslint Config Project",
+  "version": "0.0.1",
+  "homepage": "https://github.com/js-omar/eslint-config#readme",
+  "keywords": [
+    "javascript"
+  ],
+  "main": "./index.js",
   "scripts": {
     "prepare": "husky install",
+    "prepublishOnly": "npm run test:all:ci",
+    "postversion": "git push && git push --tags",
+    "fix:format": "prettier --write .",
+    "fix:lint": "eslint . --ext ts --ext js --fix",
     "check:cspell": "cspell",
     "check:format": "prettier --check .",
     "check:lint": "eslint . --ext ts --ext js",
-    "test:all": "npm run check:cspell && npm run check:format && npm run check:lint"
+    "test:all:ci": "npm run check:cspell && npm run check:format && npm run check:lint"
   },
-  "homepage": "https://github.com/js-omar/eslint-config#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/js-omar/eslint-config.git"
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest"
   },
-  "keywords": [
-    "javascript",
-    "eslint-config"
-  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "cspell": "^6.1.2",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "tslib": "^2.4.0"
+  },
   "author": {
     "name": "Omar Elsayed",
     "email": "challengeromar97@gmail.com",
     "url": "https://ng-omar.com"
   },
-  "license": "MIT",
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
+  "files": [
+    "dist",
+    "AUTHORS",
+    ".mailmap",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": [
+    "https://ng-omar.com/donate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-omar/eslint-config.git"
+  },
   "bugs": {
-    "url": "https://github.com/js-omar/core/issues"
+    "url": "https://github.com/js-omar/eslint-config/issues"
   },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "eslint": "^8.15.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.10"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "cspell": "^5.20.0",
-    "eslint": "^8.15.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.10",
-    "husky": "^7.0.4"
-  }
+  "license": "MIT"
 }
