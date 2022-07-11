@@ -20,5 +20,6 @@ module.exports = {
       'error',
       { allowExpressions: true },
     ],
+    '@typescript-eslint/no-empty-interface': 'off',
   },
 };
