@@ -6,12 +6,6 @@ module.exports = {
   },
   extends: ['plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: ['tsconfig.json'],
-    createDefaultProgram: true,
-    ecmaVersion: 13,
-    sourceType: 'module',
-  },
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/member-ordering': ['error'],
