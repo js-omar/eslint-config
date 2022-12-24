@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run test:all:ci || (echo '🚨 Test Failed'; false)
+npx lint-staged || (
+  echo '🚨 Lint Failed'
+  false
+)
