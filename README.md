@@ -12,8 +12,9 @@ npm install @js-omar/eslint-config
 
 ## Usage
 
+.eslintrc.json
+
 ```json
-// .eslintrc.json
 {
   "extends": ["@js-omar/eslint-config"]
 }

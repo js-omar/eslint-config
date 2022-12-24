@@ -16,7 +16,7 @@
     "fix:lint": "eslint . --ext ts --ext js --fix",
     "check:cspell": "cspell",
     "check:format": "prettier --check .",
-    "check:lint": "eslint . --ext ts --ext js",
+    "check:lint": "npx eslint \"src/**/*\"",
     "test:all:ci": "npm run check:cspell && npm run check:format && npm run check:lint"
   },
   "peerDependencies": {
@@ -27,24 +27,27 @@
     "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-prettier": "latest",
+    "eslint-plugin-sonarjs": "latest",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "cspell": "^6.1.2",
-    "eslint": "^8.15.0",
+    "@angular-eslint/eslint-plugin": "^15.1.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "cspell": "^6.18.0",
+    "eslint": "^8.30.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "tslib": "^2.4.0"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.17.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tslib": "^2.4.1"
   },
   "author": {
     "name": "Omar Elsayed",

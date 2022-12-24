@@ -1,12 +1,10 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: ['plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     '@typescript-eslint/member-ordering': ['error'],
     '@typescript-eslint/explicit-member-accessibility': ['error'],
@@ -15,5 +13,9 @@ module.exports = {
       { allowExpressions: true },
     ],
     '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-shadow': ['error'],
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };
