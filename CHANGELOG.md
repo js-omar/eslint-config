@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/js-omar/eslint-config/compare/v1.9.2...v1.10.0) (2022-12-25)
+
+### Features
+
+- **prettier:** use shared prettier configurations ([d103063](https://github.com/js-omar/eslint-config/commit/d1030633a4848f90586d6945df2e10c3df81dbc0))
+- refactor use each config alone ([4aaa2be](https://github.com/js-omar/eslint-config/commit/4aaa2be0c52fdebac20cd2a5a52a118f6c35150f))
+
 ## [1.9.2](https://github.com/js-omar/eslint-config/compare/v1.9.1...v1.9.2) (2022-12-25)
 
 ### Bug Fixes
