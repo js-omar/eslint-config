@@ -1,15 +1,5 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: ['eslint:recommended', 'airbnb-base'],
-  parserOptions: {
-    createDefaultProgram: true,
-    ecmaVersion: 13,
-    sourceType: 'module',
-  },
+  extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
     'no-undef': 'off',
     'comma-dangle': 'off',
@@ -19,5 +9,16 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-plusplus': 'off',
+    'no-continue': 'off',
+    'no-await-in-loop': 'off',
+    'no-useless-constructor': 'off',
+    'no-return-assign': 'off',
+    'class-methods-use-this': 'off',
+    'no-unused-vars': ['error'],
+    'no-param-reassign': 'off',
+    'no-shadow': 'off',
+    'no-return-await': 'off',
+    'no-underscore-dangle': 'off',
+    'dot-notation': 'off',
   },
 };

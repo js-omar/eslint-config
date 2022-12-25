@@ -1,6 +1,6 @@
-# Omar Eslint Config
+# Eslint Config
 
-my Shared Eslint Config
+Eslint Config Project
 
 ## Installation
 
@@ -12,8 +12,9 @@ npm install @js-omar/eslint-config
 
 ## Usage
 
+.eslintrc.json
+
 ```json
-// .eslintrc.json
 {
   "extends": ["@js-omar/eslint-config"]
 }
@@ -33,12 +34,6 @@ Install Packages
 
 ```bash
   npm install
-```
-
-Start the server
-
-```bash
-  npm run start
 ```
 
 ## Contributing

@@ -1,34 +1,7 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-echo '💬 Spell Checker,🎨 Styling,💄 Linting then 🚀 build the application'
-
-# Check Code Spell
-npm run check:cspell || (
-  echo '🚨 cspell failed'
+npx lint-staged || (
+  echo '🚨 Lint Failed'
   false
 )
-
-# if Code Spell Passes
-echo '✅ Code Spell passed'
-
-# Check Prettier Standards
-npm run check:format || (
-  echo '🚨 Check Format failed'
-  false
-)
-
-# if Prettier passes
-echo '✅ prettier passed'
-
-# Check Linting
-npm run check:lint || (
-  echo '🚨 Check Linting failed'
-  false
-)
-
-# if Linting passes
-echo '✅ Lint passed'
-
-# if everything is passes... try to run build
-echo '💚 Alright... Code looks good to me and tests passed....'
