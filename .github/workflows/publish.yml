@@ -24,6 +24,14 @@ jobs:
         with:
           node-version: '18.10.0'
 
+      # Install Dependencies
+      - name: Install dependencies 🔧
+        run: npm ci
+
+      # Npm Run Check
+      - name: Run Check All
+        run: npm run check:all
+
       # Run Semantic Release
       - name: Semantic Release
         run: |
