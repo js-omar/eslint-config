@@ -20,8 +20,12 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['*.ts', '*.js'],
+      files: ['*.*'],
       extends: ['./.eslintrc.base.js'],
+    },
+    {
+      files: ['*.ts', '*.js'],
+      extends: ['./.eslintrc.javascript.js'],
     },
     {
       files: ['*.ts'],
