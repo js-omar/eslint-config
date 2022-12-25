@@ -1,7 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: ['./.eslintrc.base.js', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    './.eslintrc.javascript.js',
+    'plugin:@typescript-eslint/recommended',
+  ],
   rules: {
     '@typescript-eslint/member-ordering': ['error'],
     '@typescript-eslint/explicit-member-accessibility': ['error'],

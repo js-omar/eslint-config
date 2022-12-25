@@ -18,8 +18,12 @@ npm i -D @js-omar/eslint-config
 {
   "overrides": [
     {
-      "files": ["*.ts", "*.js"],
+      "files": ["*.*"],
       "extends": ["@js-omar/eslint-config/.eslintrc.base.js"]
+    },
+    {
+      "files": ["*.ts", "*.js"],
+      "extends": ["@js-omar/eslint-config/.eslintrc.javascript.js"]
     },
     {
       "files": ["*.ts"],
