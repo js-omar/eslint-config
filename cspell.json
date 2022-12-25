@@ -10,7 +10,8 @@
     "preversion",
     "tailwindcss",
     "eslint",
-    "config"
+    "config",
+    "sonarjs"
   ],
   "language": "en",
   "ignoreRegExpList": ["/[ء-ي]+/"],

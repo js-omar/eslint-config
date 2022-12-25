@@ -8,24 +8,72 @@ on:
     branches: [develop]
 
 jobs:
-  prepare:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
       # Get checkout
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       # Install Node js
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.10.0'
+          node-version: '18.10.0'
+          cache: 'npm'
 
       # Install Dependencies
-      - name: Install dependencies 🔧
+      - name: Install dependencies
         run: npm ci
 
-      # Npm Run Test
-      - name: Run Test All
-        run: npm run test:all:ci
+      # Run Linting
+      - name: Run Lint Check
+        run: |
+          npm run check:lint
+
+  cspell:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Get checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Install Node js
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.10.0'
+          cache: 'npm'
+
+      # Run Spell Check
+      - name: Run Spell Check
+        run: |
+          npm run check:cspell
+
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Get checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Install Node js
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.10.0'
+          cache: 'npm'
+
+      # Run Format Check
+      - name: Run Format Check
+        run: |
+          npm run check:format
