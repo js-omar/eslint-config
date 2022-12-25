@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['airbnb-base', 'plugin:prettier/recommended'],
+  extends: [
+    'airbnb-base',
+    'plugin:sonarjs/recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     'no-undef': 'off',
     'comma-dangle': 'off',
