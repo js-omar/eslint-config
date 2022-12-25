@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [],
   ignorePatterns: [
     './lib/**/*',
     './node_modules/**/*',
@@ -28,7 +28,7 @@ module.exports = {
       extends: ['./.eslintrc.typescript.js'],
     },
     {
-      files: ['*.component.ts', '*.modal.ts', '*.page.ts'],
+      files: ['*.{component,modal,page}.ts'],
       extends: ['./.eslintrc.angular.js'],
     },
   ],

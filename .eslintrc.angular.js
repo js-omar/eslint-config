@@ -1,6 +1,9 @@
 module.exports = {
-  plugins: [],
-  extends: ['plugin:@angular-eslint/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@angular-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     '@angular-eslint/component-class-suffix': [
       'error',

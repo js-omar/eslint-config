@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    'eslint:recommended',
     'airbnb-base',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
