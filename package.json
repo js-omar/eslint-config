@@ -1,7 +1,7 @@
 {
   "name": "@js-omar/eslint-config",
   "displayName": "Eslint Config",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "Eslint Config Project",
   "keywords": [
     "javascript"
