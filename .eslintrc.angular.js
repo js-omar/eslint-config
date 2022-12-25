@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'plugin:@angular-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['./.eslintrc.typescript.js', 'plugin:@angular-eslint/recommended'],
   rules: {
     '@angular-eslint/component-class-suffix': [
       'error',
