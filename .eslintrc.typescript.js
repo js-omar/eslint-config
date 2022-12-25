@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: [
     'plugin:@typescript-eslint/recommended',
+    'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {

@@ -9,14 +9,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:sonarjs/recommended',
-    'plugin:prettier/recommended',
-  ],
-  rules: {
-    'prettier/prettier': ['error'],
-  },
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   ignorePatterns: [
     './lib/**/*',
     './node_modules/**/*',

@@ -15,6 +15,26 @@
   ],
   "language": "en",
   "ignoreRegExpList": ["/[ء-ي]+/"],
-  "ignorePaths": ["node_modules", "lib", "dist", "gitignore"],
-  "files": ["**"]
+  "files": ["**"],
+  "enableGlobDot": true,
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    ".idea",
+    ".git",
+    ".angular",
+    ".gitignore",
+    ".husky/_/**",
+    ".eslintrc.*",
+    "**/*.svg",
+    "decorate-angular-cli.js",
+    ".browserslistrc",
+    "cspell.json",
+    ".vscode/**",
+    "jest.config.ts",
+    "android",
+    "ios",
+    ".scannerwork",
+    "nginx*.conf"
+  ]
 }
