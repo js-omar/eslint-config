@@ -4,10 +4,10 @@ Eslint Config Project
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/) to install @js-omar/eslint-config.
+Use the package manager [npm](https://www.npmjs.com/) to install @js-omar/eslint-config as dev dependencies.
 
 ```bash
-npm install @js-omar/eslint-config
+npm i -D @js-omar/eslint-config
 ```
 
 ## Usage
