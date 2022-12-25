@@ -1,3 +1,9 @@
+## [1.9.2](https://github.com/js-omar/eslint-config/compare/v1.9.1...v1.9.2) (2022-12-25)
+
+### Bug Fixes
+
+- move sonarjs recommended from core eslint to base and typescript ([e884fb2](https://github.com/js-omar/eslint-config/commit/e884fb26e36ed5f71a36000bc322527781762520))
+
 ## [1.9.1](https://github.com/js-omar/eslint-config/compare/v1.9.0...v1.9.1) (2022-12-25)
 
 ### Bug Fixes
