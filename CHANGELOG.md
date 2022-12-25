@@ -1,3 +1,9 @@
+## [1.12.1](https://github.com/js-omar/eslint-config/compare/v1.12.0...v1.12.1) (2022-12-25)
+
+### Bug Fixes
+
+- **cspell:** move cspell config to base eslint config ([d1623ba](https://github.com/js-omar/eslint-config/commit/d1623ba058a4c31abda733ded752d182db858de6))
+
 # [1.12.0](https://github.com/js-omar/eslint-config/compare/v1.11.0...v1.12.0) (2022-12-25)
 
 ### Features
