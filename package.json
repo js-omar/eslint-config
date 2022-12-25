@@ -1,6 +1,6 @@
 {
   "name": "@js-omar/eslint-config",
-  "displayName": "Eslint Config",
+  "displayName": "Eslint configurations",
   "version": "1.9.2",
   "description": "Eslint Config Project",
   "keywords": [
@@ -31,6 +31,7 @@
     "check:format": "npx prettier . --check",
     "check:all": "npm-run-all check:lint check:cspell check:format"
   },
+  "prettier": "@js-omar/prettier-config",
   "devDependencies": {
     "@angular-eslint/eslint-plugin": "^15.1.0",
     "@commitlint/cli": "^17.3.0",
