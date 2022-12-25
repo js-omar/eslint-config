@@ -36,6 +36,7 @@
     "@angular-eslint/eslint-plugin": "^15.1.0",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@js-omar/prettier-config": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "cspell": "^6.18.0",

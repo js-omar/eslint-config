@@ -16,7 +16,20 @@ npm i -D @js-omar/eslint-config
 
 ```json
 {
-  "extends": ["@js-omar/eslint-config"]
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js"],
+      "extends": ["@js-omar/eslint-config/.eslintrc.base.js"]
+    },
+    {
+      "files": ["*.ts"],
+      "extends": ["@js-omar/eslint-config/.eslintrc.typescript.js"]
+    },
+    {
+      "files": ["*.{component,modal,page}.ts"],
+      "extends": ["@js-omar/eslint-config/.eslintrc.angular.js"]
+    }
+  ]
 }
 ```
 
