@@ -1,3 +1,9 @@
+# [1.12.0](https://github.com/js-omar/eslint-config/compare/v1.11.0...v1.12.0) (2022-12-25)
+
+### Features
+
+- **sort-json:** add sort-json extension to eslint ([3ac3e58](https://github.com/js-omar/eslint-config/commit/3ac3e5802b1278813a09773a340cbd951b4e9dab))
+
 # [1.11.0](https://github.com/js-omar/eslint-config/compare/v1.10.0...v1.11.0) (2022-12-25)
 
 ### Features
