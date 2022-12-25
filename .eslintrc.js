@@ -31,5 +31,9 @@ module.exports = {
       files: ['*.{component,modal,page}.ts'],
       extends: ['./.eslintrc.angular.js'],
     },
+    {
+      files: ['*.json'],
+      extends: ['./.eslintrc.json.js'],
+    },
   ],
 };
