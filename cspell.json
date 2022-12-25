@@ -11,7 +11,8 @@
     "tailwindcss",
     "eslint",
     "config",
-    "sonarjs"
+    "sonarjs",
+    "plusplus"
   ],
   "language": "en",
   "ignoreRegExpList": ["/[ء-ي]+/"],

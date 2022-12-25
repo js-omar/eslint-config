@@ -1,11 +1,13 @@
 module.exports = {
   extends: [
+    'plugin:@cspell/recommended',
     'eslint:recommended',
     'airbnb-base',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {
+    '@cspell/spellchecker': ['error'],
     'no-undef': 'off',
     'comma-dangle': 'off',
     'space-in-parens': ['error'],
