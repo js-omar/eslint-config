@@ -1,10 +1,9 @@
 {
-  "*.{ts,js}": [
+  "*.{ts,js,json}": [
     "eslint --fix",
     "prettier --write",
     "cspell -c cspell.json --no-must-find-files"
   ],
-  "package.json": ["sort-package-json"],
   "!(*.{ts,js,css,less,sass,scss}|package.json)": [
     "prettier --write --ignore-unknown",
     "cspell -c cspell.json --no-must-find-files"

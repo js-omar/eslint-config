@@ -28,6 +28,10 @@ npm i -D @js-omar/eslint-config
     {
       "files": ["*.{component,modal,page}.ts"],
       "extends": ["@js-omar/eslint-config/.eslintrc.angular.js"]
+    },
+    {
+      "files": ["*.json"],
+      "extends": ["@js-omar/eslint-config/.eslintrc.json.js"]
     }
   ]
 }
