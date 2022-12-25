@@ -1,3 +1,9 @@
+# [1.9.0](https://github.com/js-omar/eslint-config/compare/v1.8.1...v1.9.0) (2022-12-25)
+
+### Features
+
+- add new extends and rules ([b75d0f5](https://github.com/js-omar/eslint-config/commit/b75d0f5f160da0bd7441d19a4ef21e3d50a7bebb))
+
 # Changelog
 
 ## v1.0.0 (2022-05-17)
