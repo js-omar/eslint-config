@@ -1,3 +1,9 @@
+# [1.11.0](https://github.com/js-omar/eslint-config/compare/v1.10.0...v1.11.0) (2022-12-25)
+
+### Features
+
+- **cspell:** add cspell config to eslint rules ([d4b07fe](https://github.com/js-omar/eslint-config/commit/d4b07fe2e0aad8a79355110c263cf2dd40a5a131))
+
 # [1.10.0](https://github.com/js-omar/eslint-config/compare/v1.9.2...v1.10.0) (2022-12-25)
 
 ### Features
