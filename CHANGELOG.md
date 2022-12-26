@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/js-omar/eslint-config/compare/v1.15.0...v1.16.0) (2022-12-26)
+
+### Features
+
+- **airbnb-typescript:** add airbnb typescript to eslint extends ([5b37826](https://github.com/js-omar/eslint-config/commit/5b37826605f778afe09f201871d4b74633ab9cc5))
+- **naming-convention:** add naming convention rule to typescript ([8b7deba](https://github.com/js-omar/eslint-config/commit/8b7deba75bbedd1ea16dfcc2c8c3a3f43777db9c))
+
 # [1.15.0](https://github.com/js-omar/eslint-config/compare/v1.14.0...v1.15.0) (2022-12-26)
 
 ### Bug Fixes
