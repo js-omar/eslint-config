@@ -19,4 +19,15 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
+  overrides: [
+    {
+      files: ['*.spec.ts'],
+      env: { jest: true },
+      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
+    },
+    {
+      files: ['**/*/e2e.ts'],
+      rules: { 'unicorn/prevent-abbreviations': 'off' },
+    },
+  ],
 };
