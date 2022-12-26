@@ -39,5 +39,10 @@ module.exports = {
       files: ['*.json'],
       extends: ['./.eslintrc.json.js'],
     },
+    {
+      files: ['*.spec.ts', '*.spec.tsx', '*.spec.js', '*.spec.jsx'],
+      env: { jest: true },
+      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
+    },
   ],
 };

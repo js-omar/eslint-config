@@ -4,7 +4,7 @@
     "prettier --write",
     "cspell -c cspell.json --no-must-find-files"
   ],
-  "!(*.{ts,js,css,less,sass,scss}|package.json)": [
+  "!*.{ts,js,json,css,less,sass,scss}": [
     "prettier --write --ignore-unknown",
     "cspell -c cspell.json --no-must-find-files"
   ]
