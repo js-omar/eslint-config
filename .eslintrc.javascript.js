@@ -29,5 +29,6 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'dot-notation': 'off',
     'unicorn/prefer-module': 'off',
+    'no-irregular-whitespace': ['error'],
   },
 };

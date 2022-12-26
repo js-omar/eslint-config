@@ -22,6 +22,31 @@ module.exports = {
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['strictCamelCase'],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        selector: 'parameter',
+        format: ['strictCamelCase'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'variable',
+        format: ['StrictPascalCase'],
+        types: ['boolean'],
+        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+      },
+      {
+        selector: 'typeLike',
+        format: ['StrictPascalCase'],
+      },
+    ],
   },
   overrides: [
     {
@@ -48,8 +73,12 @@ module.exports = {
         'cypress.config.ts',
         'test-setup.ts',
         '*.stories.ts',
+        'jest.config.ts',
       ],
-      rules: { 'import/no-extraneous-dependencies': 'off' },
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+        '@typescript-eslint/naming-convention': 'off',
+      },
     },
   ],
 };
