@@ -12,33 +12,45 @@ npm i -D @js-omar/eslint-config
 
 ## Usage
 
-.eslintrc.json
+.eslintrc.js
 
-```json
-{
-  "overrides": [
+```js
+module.exports = {
+  overrides: [
     {
-      "files": ["*.*"],
-      "extends": ["@js-omar/eslint-config/.eslintrc.base.js"]
+      files: ['*.*'],
+      extends: ['@js-omar/eslint-config/.eslintrc.base.js'],
     },
     {
-      "files": ["*.ts", "*.js"],
-      "extends": ["@js-omar/eslint-config/.eslintrc.javascript.js"]
+      files: ['*.ts', '*.js'],
+      extends: ['@js-omar/eslint-config/.eslintrc.javascript.js'],
     },
     {
-      "files": ["*.ts"],
-      "extends": ["@js-omar/eslint-config/.eslintrc.typescript.js"]
+      files: ['*.ts'],
+      extends: [
+        '@js-omar/eslint-config/.eslintrc.typescript.js',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.*.json', './{apps,libs}/*/*/tsconfig.*.json'],
+      },
     },
     {
-      "files": ["*.{component,modal,page}.ts"],
-      "extends": ["@js-omar/eslint-config/.eslintrc.angular.js"]
+      files: ['*.{component,modal,page}.ts'],
+      extends: ['@js-omar/eslint-config/.eslintrc.angular.js'],
     },
     {
-      "files": ["*.json"],
-      "extends": ["@js-omar/eslint-config/.eslintrc.json.js"]
-    }
-  ]
-}
+      files: ['*.json'],
+      extends: ['@js-omar/eslint-config/.eslintrc.json.js'],
+    },
+    {
+      files: ['*.spec.ts', '*.spec.tsx', '*.spec.js', '*.spec.jsx'],
+      env: { jest: true },
+      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
+    },
+  ],
+};
 ```
 
 ## Development
