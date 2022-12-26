@@ -52,6 +52,7 @@
     "eslint-plugin-json-files": "latest",
     "eslint-plugin-prettier": "latest",
     "eslint-plugin-sonarjs": "latest",
+    "eslint-plugin-unicorn": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "npm-run-all": "latest",

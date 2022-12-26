@@ -3,6 +3,7 @@ module.exports = {
     './.eslintrc.base.js',
     'eslint:recommended',
     'plugin:eslint-comments/recommended',
+    'plugin:unicorn/recommended',
     'airbnb-base',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
@@ -27,5 +28,6 @@ module.exports = {
     'no-return-await': 'off',
     'no-underscore-dangle': 'off',
     'dot-notation': 'off',
+    'unicorn/prefer-module': 'off',
   },
 };
