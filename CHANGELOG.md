@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/js-omar/eslint-config/compare/v1.13.0...v1.14.0) (2022-12-26)
+
+### Features
+
+- **eslint-comment:** add `eslint-plugin-eslint-comments` to eslint extends ([c483ad2](https://github.com/js-omar/eslint-config/commit/c483ad2c13e11e1805e9d824aa48cfed8c045190))
+- **eslint-unicorn:** add `eslint-plugin-unicorn` to eslint extends ([fbbd447](https://github.com/js-omar/eslint-config/commit/fbbd447139edc68fc5a5ba015496dccdb8acc775))
+
 # [1.13.0](https://github.com/js-omar/eslint-config/compare/v1.12.1...v1.13.0) (2022-12-26)
 
 ### Features
