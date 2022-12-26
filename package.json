@@ -33,10 +33,10 @@
   },
   "prettier": "@js-omar/prettier-config",
   "devDependencies": {
-    "@angular-eslint/eslint-plugin": "^15.1.0",
     "tslib": "^2.4.1"
   },
   "peerDependencies": {
+    "@angular-eslint/eslint-plugin": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@cspell/eslint-plugin": "latest",
