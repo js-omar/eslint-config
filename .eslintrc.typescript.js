@@ -5,6 +5,7 @@ module.exports = {
     './.eslintrc.javascript.js',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   rules: {
     '@typescript-eslint/member-ordering': ['error'],
@@ -21,12 +22,16 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['*.{component,modal,page}.ts'],
+      extends: ['./.eslintrc.angular.js'],
+    },
+    {
       files: ['*.spec.ts'],
       env: { jest: true },
       rules: { '@typescript-eslint/no-unsafe-call': 'off' },
     },
     {
-      files: ['**/*/e2e.ts'],
+      files: ['e2e.ts'],
       rules: { 'unicorn/prevent-abbreviations': 'off' },
     },
   ],

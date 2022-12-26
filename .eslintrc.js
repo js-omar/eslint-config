@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  extends: [],
+  extends: ['./.eslintrc.base.js'],
   ignorePatterns: [
     './lib/**/*',
     './node_modules/**/*',
@@ -20,29 +20,8 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['*.*'],
-      extends: ['./.eslintrc.base.js'],
-    },
-    {
-      files: ['*.ts', '*.js'],
+      files: ['*.js'],
       extends: ['./.eslintrc.javascript.js'],
-    },
-    {
-      files: ['*.ts'],
-      extends: ['./.eslintrc.typescript.js'],
-    },
-    {
-      files: ['*.{component,modal,page}.ts'],
-      extends: ['./.eslintrc.angular.js'],
-    },
-    {
-      files: ['*.json'],
-      extends: ['./.eslintrc.json.js'],
-    },
-    {
-      files: ['*.spec.ts', '*.spec.tsx', '*.spec.js', '*.spec.jsx'],
-      env: { jest: true },
-      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
     },
   ],
 };

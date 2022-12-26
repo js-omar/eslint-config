@@ -16,38 +16,19 @@ npm i -D @js-omar/eslint-config
 
 ```js
 module.exports = {
+  extends: ['@js-omar/eslint-config/.eslintrc.base.js'],
   overrides: [
     {
-      files: ['*.*'],
-      extends: ['@js-omar/eslint-config/.eslintrc.base.js'],
-    },
-    {
-      files: ['*.ts', '*.js'],
+      files: ['*.js'],
       extends: ['@js-omar/eslint-config/.eslintrc.javascript.js'],
     },
     {
       files: ['*.ts'],
-      extends: [
-        '@js-omar/eslint-config/.eslintrc.typescript.js',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
-      ],
+      extends: ['@js-omar/eslint-config/.eslintrc.typescript.js'],
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ['./tsconfig.*.json', './{apps,libs}/*/*/tsconfig.*.json'],
       },
-    },
-    {
-      files: ['*.{component,modal,page}.ts'],
-      extends: ['@js-omar/eslint-config/.eslintrc.angular.js'],
-    },
-    {
-      files: ['*.json'],
-      extends: ['@js-omar/eslint-config/.eslintrc.json.js'],
-    },
-    {
-      files: ['*.spec.ts', '*.spec.tsx', '*.spec.js', '*.spec.jsx'],
-      env: { jest: true },
-      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
     },
   ],
 };
