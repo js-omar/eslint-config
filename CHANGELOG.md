@@ -1,3 +1,9 @@
+# [1.13.0](https://github.com/js-omar/eslint-config/compare/v1.12.1...v1.13.0) (2022-12-26)
+
+### Features
+
+- extend typescript eslint recommended ([8301530](https://github.com/js-omar/eslint-config/commit/8301530790f9054a79f4d551861dd54c968890a7))
+
 ## [1.12.1](https://github.com/js-omar/eslint-config/compare/v1.12.0...v1.12.1) (2022-12-25)
 
 ### Bug Fixes
