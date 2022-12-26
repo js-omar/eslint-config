@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     './.eslintrc.base.js',
     'eslint:recommended',
+    'plugin:eslint-comments/recommended',
     'airbnb-base',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',

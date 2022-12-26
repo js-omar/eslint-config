@@ -47,6 +47,7 @@
     "eslint": "latest",
     "eslint-config-airbnb-base": "latest",
     "eslint-config-prettier": "latest",
+    "eslint-plugin-eslint-comments": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-json-files": "latest",
     "eslint-plugin-prettier": "latest",
