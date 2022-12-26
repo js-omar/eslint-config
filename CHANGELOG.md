@@ -1,3 +1,13 @@
+# [1.15.0](https://github.com/js-omar/eslint-config/compare/v1.14.0...v1.15.0) (2022-12-26)
+
+### Bug Fixes
+
+- move angular eslint package to peer deps ([e21ce64](https://github.com/js-omar/eslint-config/commit/e21ce64fdf4d0ffb13ad992e56e340934cc1e012))
+
+### Features
+
+- **eslint-type-checking:** add `requiring-type-checking` to typescript eslint extends ([3216143](https://github.com/js-omar/eslint-config/commit/32161438b5585e009929a7abe608d2bca1f84cfc))
+
 # [1.14.0](https://github.com/js-omar/eslint-config/compare/v1.13.0...v1.14.0) (2022-12-26)
 
 ### Features
