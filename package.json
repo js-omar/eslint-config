@@ -48,6 +48,7 @@
     "eslint-config-airbnb-base": "latest",
     "eslint-config-airbnb-typescript": "latest",
     "eslint-config-prettier": "latest",
+    "eslint-plugin-cypress": "latest",
     "eslint-plugin-eslint-comments": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jest": "latest",
