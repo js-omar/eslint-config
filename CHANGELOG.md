@@ -1,3 +1,9 @@
+## [1.16.1](https://github.com/js-omar/eslint-config/compare/v1.16.0...v1.16.1) (2022-12-28)
+
+### Bug Fixes
+
+- add missing eslint-plugin-cypress to peer deps ([89b22c7](https://github.com/js-omar/eslint-config/commit/89b22c7765ab9c50482a417322b49c0ce2d9bfcf))
+
 # [1.16.0](https://github.com/js-omar/eslint-config/compare/v1.15.0...v1.16.0) (2022-12-26)
 
 ### Features
