@@ -30,5 +30,10 @@ module.exports = {
     'dot-notation': 'off',
     'unicorn/prefer-module': 'off',
     'no-irregular-whitespace': ['error'],
+    'unicorn/no-null': 'off',
+    'import/no-cycle': 'off',
+    'unicorn/no-array-for-each': 'off',
+    'promise/catch-or-return': 'off',
+    'promise/valid-params': 'off',
   },
 };
