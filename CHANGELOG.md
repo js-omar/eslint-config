@@ -1,3 +1,9 @@
+# [1.17.0](https://github.com/js-omar/eslint-config/compare/v1.16.1...v1.17.0) (2023-01-07)
+
+### Features
+
+- turn off some js and ts rules ([8d673e1](https://github.com/js-omar/eslint-config/commit/8d673e14874e1852bf8e92a819c51da5bb29d44d))
+
 ## [1.16.1](https://github.com/js-omar/eslint-config/compare/v1.16.0...v1.16.1) (2022-12-28)
 
 ### Bug Fixes
