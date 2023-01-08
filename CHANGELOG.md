@@ -1,3 +1,9 @@
+## [1.17.1](https://github.com/js-omar/eslint-config/compare/v1.17.0...v1.17.1) (2023-01-08)
+
+### Bug Fixes
+
+- update typescript rules to prevent override ([c612828](https://github.com/js-omar/eslint-config/commit/c6128282cf0227334c523a6caaf09258f64173c9))
+
 # [1.17.0](https://github.com/js-omar/eslint-config/compare/v1.16.1...v1.17.0) (2023-01-07)
 
 ### Features
