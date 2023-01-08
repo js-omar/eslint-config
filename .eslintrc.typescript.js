@@ -23,6 +23,9 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
+    'promise/catch-or-return': 'off',
+    'promise/valid-params': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
   overrides: [
     {
