@@ -65,8 +65,8 @@
     "sort-package-json": "latest"
   },
   "engines": {
-    "node": "18.10.0",
-    "npm": ">=7"
+    "node": "*",
+    "npm": "*"
   },
   "publishConfig": {
     "access": "public"

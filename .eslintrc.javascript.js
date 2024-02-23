@@ -7,6 +7,7 @@ module.exports = {
     'airbnb-base',
     'plugin:sonarjs/recommended',
     'plugin:prettier/recommended',
+    'plugin:promise/recommended',
   ],
   rules: {
     'no-undef': 'off',
