@@ -7,10 +7,18 @@ on:
   push:
     branches: [master]
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   # Run Semantic Release only on master branch
   semantic-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance # cspell:ignore oidc wbch
     steps:
       # Get checkout
       - name: Checkout
@@ -22,7 +30,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.10.0'
+          node-version: '20.8.1'
 
       # Install Dependencies
       - name: Install dependencies 🔧
