@@ -1,3 +1,9 @@
+# [1.18.0](https://github.com/js-omar/eslint-config/compare/v1.17.1...v1.18.0) (2024-02-23)
+
+### Features
+
+- add more angular component conventions ([64bf534](https://github.com/js-omar/eslint-config/commit/64bf53408c9cb5c44edff5ae715e8022d7ff1a0a))
+
 ## [1.17.1](https://github.com/js-omar/eslint-config/compare/v1.17.0...v1.17.1) (2023-01-08)
 
 ### Bug Fixes
