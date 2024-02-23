@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     '@angular-eslint/component-class-suffix': [
       'error',
-      { suffixes: ['Page', 'Component', 'Modal'] },
+      { suffixes: ['Page', 'Component', 'Modal', 'Dialog', 'Section'] },
     ],
   },
 };
