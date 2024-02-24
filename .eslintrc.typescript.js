@@ -25,17 +25,31 @@ module.exports = {
     'promise/catch-or-return': 'off',
     'promise/valid-params': 'off',
     'import/no-extraneous-dependencies': 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        prefix: ['I'],
+      },
+    ],
   },
   overrides: [
     {
-      files: ['*.{component,modal,page}.ts'],
+      files: ['*.{component,modal,page,dialog,section}.ts'],
       extends: ['./.eslintrc.angular.js'],
     },
     {
       files: ['*.spec.ts', '*.test.ts'],
       extends: ['plugin:jest/recommended'],
       env: { jest: true, 'jest/globals': true },
-      rules: { '@typescript-eslint/no-unsafe-call': 'off' },
+      rules: {
+        '@typescript-eslint/no-unsafe-call': 'off',
+        'jest/expect-expect': [
+          'warn',
+          { assertFunctionNames: ['expect', 'request.**.expect'] },
+        ],
+      },
     },
     {
       files: ['*.cy.ts'],
