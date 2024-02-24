@@ -1,3 +1,9 @@
+# [1.19.0](https://github.com/js-omar/eslint-config/compare/v1.18.0...v1.19.0) (2024-02-24)
+
+### Features
+
+- add more configurations and fix some ([f7eb1dd](https://github.com/js-omar/eslint-config/commit/f7eb1dd94446e1cc10e773bdd034317405a4b1f9))
+
 # [1.18.0](https://github.com/js-omar/eslint-config/compare/v1.17.1...v1.18.0) (2024-02-23)
 
 ### Features
